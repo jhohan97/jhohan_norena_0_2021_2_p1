@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
     var decodeJson = jsonDecode(responseBody);
     var ligas = Ligas.fromJson(decodeJson);
 
-    Navigator.pushReplacement(
+    Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => Lista_De_Ligas(

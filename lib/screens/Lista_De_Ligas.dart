@@ -14,6 +14,8 @@ class Lista_De_Ligas extends StatefulWidget {
 }
 
 class _Lista_De_LigasState extends State<Lista_De_Ligas> {
+  List<Ligas> _liga = [];
+
   @override
   void initState() {
     super.initState();
@@ -33,9 +35,65 @@ class _Lista_De_LigasState extends State<Lista_De_Ligas> {
     return Container(
       margin: EdgeInsets.all(30),
       child: Center(
-        child: Text(
-          'ligas ${widget.ligas.data[0].name}',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        child: Column(
+          children: [
+            Text(
+              'ligas ${widget.ligas.data[0].id}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[0].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[0].logos}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[1].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[1].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[1].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[6].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[7].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[8].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[9].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[10].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[11].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[12].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'ligas ${widget.ligas.data[13].name}',
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+          ],
         ),
       ),
     );
